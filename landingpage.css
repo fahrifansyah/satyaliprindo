@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 128px;
+    position: sticky;
+    top: 0px;
+    background-color: #F9F9F9;
+    z-index: 5;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0px 0px 16px 0px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+}
+
+a:hover{
+    color: #F16A23;
+}
+
+nav{
+    margin-right: 100px;
+}
+
+.service {
+    padding: 0px 100px;
+}
+
+section{
+    padding: 64px 128px 140px 128px;
+}
+
+#landing{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 24px;
+}
+
+#landing h1 {
+    background: -webkit-linear-gradient(280deg, #F16A23, #FFBC0F);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+#landing p {
+    color: #979797;
+    margin: 0px 0px 38px 0px;
+    font-size: 24px;
+}
+
+#landing > div {
+    width: 50%;
+}
+
+.btn-landing{
+    display: flex;
+    background-color: #F16A23;
+    color: white;
+    padding: 6px 24px;
+    width: 23%;
+    border-radius: 24px;
+    align-items: center;
+    cursor: pointer;
+    column-gap: 5px;
+}
+
+.btn-landing:hover{
+    color: rgb(119, 32, 32);
+    background-color: black;
+}
+
+.btn-landing a {
+    color: white;
+}
+
+.btn-landing img {
+    width: 10px;
+    height: 10px;
+}
+
+#landing img {
+    height: 50%;
+    width: 100%;
+    border-radius: 16px;
+}
+
+#about-company{
+    background-color: #F9F9F9;
+}
+
+.region {
+    background-color: #F8B491;
+    display: flex;
+    justify-content: space-between;
+    padding: 82px 32px;
+    border-radius: 12rem;
+    column-gap: 5%;
+    align-items: center;
+}
+
+.circle{
+    background-color: white;
+    border-radius: 12rem 0 0 12rem;
+    width: 3000px;
+    height: 320px;
+}
+
+.circle h1{
+    padding: 100px 0 0 80px;
+    color: #F16A23;
+}
+
+.circle {
+    position: relative;
+}
+
+.circle ::after{
+    content: "";
+    width: 5px;
+    height: 320px;
+    background: url("Gambar/Line\ 1.png");
+    position: absolute;
+    right : 0px;
+    top: 0px;
+}
+
+.region p {
+    font-size: 18px;
+    margin-right: 80px;
+    font-weight: 450;
+}
+
+.contact-detail {
+    display: flex;
+    justify-content: center;
+}
+
+form, .contact-location {
+    width : 50%;
+}
+
+form {
+    padding: 64px 32px;
+    background-color: #F8B491;
+    width: 80%;
+    border-radius: 8px;
+
+}
+
+form h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-top: 32px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 0 32px 310px;
+}
+
+.input-group input {
+    border: 1px solid #F16A23;
+    border-radius: 8px;
+    outline: none;
+    font-size: 20px;
+    padding: 6px 0px;
+}
+
+.input-group textarea {
+    border: 1px solid #F16A23;
+    outline: none;
+    font-size: 20px;
+    border-radius: 8px;
+}
+
+form button{
+    border: none;
+    background-color: #F16A23;
+    color: white;
+    padding: 12px 62px;
+    margin-left: 510px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form button:hover{
+    color: white;
+    background-color: black;
+}
+
+footer{
+    padding: 64px 128px;
+    background-color: #F16A23;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer img {
+    padding-bottom: 24px ;
+}
+
+footer p {
+    color: black;
+    width: 50%;
+    font-size: 18px;
+    font-weight: 400;
+    width: 80%;
+}
+
+.social-icon {
+    display: flex;
+    column-gap: 24px
+}
+
+.copyright{
+    transform: translateY(10px);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: grid;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F16A23;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* Muncul persis di bawah */
+    left: 0; /* Muncul persis di bawah bacaan Our Product */
+    width: 650px; /* Lebar dropdown */
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    gap: 10px; /* Jarak antar item */
+    padding: 10px;
+    border-radius: 16px;
+  }
+
+  .dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    border-bottom: 1px solid #666; /* Garis pemisah */
+  }
+  
+  .dropdown-content a:hover {
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+  }
